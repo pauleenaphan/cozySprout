@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CozySprout</title>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="p-4 flex items-center justify-between px-10 fixed w-full z-50" style="background-color: #fff8b4;"> 
+            <h1 class="text-3xl font-bold"> Cozy<span class="text-green-700">Sprout</span> <i class="fas fa-leaf text-green-700"></i></h1>
+            
+            <div class="flex gap-2 relative" style="width: 30%;">
+                <input type="text" placeholder="Start Looking for your plant" class="w-full py-1 px-3 rounded-lg" style="background-color: #fffde9; border: #cac59b solid 2px">
+                <i class="fas fa-search absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+            </div>
+            <div class="flex gap-3">
+                <button class="font-bold"> CART</button>
+                <button class="font-bold"> ACCOUNT </button>
+            </div>
+        </nav>
+
+        <main class="flex flex-col gap-20" style="background-color: #fffce0;"">
+            <div class="bg-cover bg-center text-white flex flex-col justify-center items-center gap-5" style="background-image: url('assets/greenLeaves.jpg'); height: 100vh;">
+                <p class="text-7xl font-bold"> Stay cozy with Greens </p>
+                <p class="text-xl font-medium"> Add a touch of greenery to make your space feel even more honey </p>
+                <div>
+                    <button class="rounded-lg p-3 text-black font-bold mr-3 transform hover:scale-105 duration-300" style="background-color: #fff8b4;"> Browse Collection </button>
+                    <button class="underline"> Learn More About Us </button>
+                </div>
+                
+            </div>
+            
+            <div class="px-40">
+                <h2 class="text-4xl font-bold my-8"> Featured <span class="text-green-700">Products</span>  </h2>
+                <div class="flex gap-5">
+                    <div class="bg-gray-200 rounded-lg flex flex-col w-1/3 p-5 gap-5 justify-between shadow-2xl border-2 border-gray-300 transform hover:scale-105 duration-300 cursor-pointer">
+                        <div class="flex flex-col gap-3">
+                            <p class="text-xl font-medium"> Floral Leaves </p>
+                            <img src="assets/product1.jpg" alt="floral leaves" class="rounded-lg w-full"> 
+                            <p class="text-gray-700"> 
+                                Floral Leaves offers a curated selection of lush plants and vibrant greenery to brighten any space. Whether 
+                                you're a plant enthusiast or just starting your indoor garden, we have the perfect flora to bring nature into your home.
+                            </p>
+                        </div>
+                        
+                        <div class="flex justify-between">
+                            <p class="text-lg font-bold"> $9.99 </p>
+                            <p> 4 Stars </p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-200 rounded-lg flex flex-col w-1/3 p-5 gap-3 justify-between shadow-2xl border-2 border-gray-300 transform hover:scale-105 duration-300 cursor-pointer">
+                        <div class="flex flex-col gap-3">
+                            <p class="text-xl font-medium"> Succulent Buzz </p>
+                            <img src="assets/product2.jpg" alt="succulent buzz" class="rounded-lg w-full"> 
+                            <p class="text-gray-700"> 
+                                Succulent Buzz offers a variety of charming succulents to add a touch of greenery and style to your space.
+                            </p>
+                        </div>
+                        
+                        <div class="flex justify-between">
+                            <p class="text-lg font-bold"> $5.99 </p>
+                            <p> 4 Stars </p>
+                        </div>
+                        
+                    </div>
+                    <div class="bg-gray-200 rounded-lg flex flex-col w-1/3 p-5 gap-3 justify-between shadow-2xl border-2 border-gray-300 transform hover:scale-105 duration-300 cursor-pointer">
+                        <div class="flex flex-col gap-3">
+                            <p class="text-xl font-medium"> Leaf & Vine </p>
+                            <img src="assets/product3.jpg" alt="lead and vine" class="rounded-lg w-full"> 
+                            <p class="text-gray-700"> 
+                                Leaf & Vine offers a beautiful selection of plants, from lush greenery to unique vines, perfect for bringing life and freshness to any space
+                            </p>
+                        </div>
+                        
+                        <div class="flex justify-between">
+                            <p class="text-lg font-bold"> $12.99 </p>
+                            <p> 4 Stars </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="px-40">
+                <h3 class="text-4xl font-bold my-8"> Your Guide to <span class="text-green-700">Thriving</span> Plants </h3>
+
+                <div class="flex flex-row gap-5">
+                    <div class="articleCard flex flex-col w-1/2 border-2 border-gray-300 rounded-lg">
+                        <img src="assets/article1.jpg" alt="plants in room">
+                        <div class="bg-gray-200 p-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-xl font-bold"> Tips for Beginners </p>
+                                    <p class="text-gray-500"> 5 Minute Read | Posted: 1/8/2025</p>  
+                                </div>
+                                <i class="arrowBtn fas fa-arrow-right text-xl"></i>
+                            </div>
+                            
+                            <p>
+                                Get started with plant care! This guide covers the essentials every beginner needs to know to keep their plants happy and healthy.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="articleCard flex flex-col w-1/2 border-2 border-gray-300 rounded-lg">
+                        <img src="assets/article2.jpg" alt="plants">
+                        <div class="bg-gray-200 p-4 flex flex-col gap-2">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-xl font-bold"> Why you need Plants </p>
+                                    <p class="text-gray-500"> 3 Minute Read | Posted: 2/8/2025</p>
+                                </div>
+                                <i class="arrowBtn fas fa-arrow-right text-xl"></i>
+                            </div>
+                            <p>
+                                Discover the many benefits of having plants in your home – from improving air quality to boosting your mood and productivity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="bg-green-700 px-40 py-12 flex items-center justify-between">
+                <div>
+                    <p class="text-4xl font-bold my-8 text-white"> Subscribe to Save 30% off </p>
+                    <p class="text-lg text-gray-400"> *Only applies to certain products </p>
+                </div>
+                <div class="flex gap-3" style="width: 60%;">
+                    <input type="text" placeholder="Your Email" class="w-full py-1 px-3 rounded-lg" style="background-color: #fffde9; border: #cac59b solid 2px">
+                    <button class="rounded-lg p-3 text-black font-bold mr-3 transform hover:scale-105 duration-300" style="background-color: #fff8b4;"> Subscribe </button>
+                </div>
+            </div>
+            
+            <div class="px-40 mb-20">
+                <h4 class="text-4xl font-bold my-5"> FAQ </h4>
+                <div class="border-2 p-4 bg-gray-200"> 
+                    <p class="question text-xl font-medium"> Where are your products sourced from?</p>
+                    <p class="answer" style="display: none;">
+                        We source our plants from trusted growers who use sustainable and eco-friendly practices.
+                    </p>
+                </div>
+                <div class="border-2 p-4 bg-gray-200">
+                    <p class="question text-xl font-medium"> Do you offer gift cards?</p>
+                    <p class="answer hidden">
+                        Yes! CozySprout gift cards are the perfect gift for plant lovers. You can purchase them 
+                        directly on our website.
+                    </p>
+                </div>
+                <div class="border-2 p-4 bg-gray-200">
+                    <p class="question text-xl font-medium"> How do I care for my new plant?</p>
+                    <p class="answer hidden"> 
+                        Each plant comes with a care guide tailored to its needs. General tips include providing the right amount of sunlight, 
+                        watering when the soil feels dry, and ensuring good drainage.
+                    </p>
+                </div>
+                <div class="border-2 p-4 bg-gray-200">
+                    <p class="question text-xl font-medium"> Are your plants pet-friendly?</p>
+                    <p class="answer hidden">
+                        We offer a selection of pet-friendly plants. Look for the "pet-safe" label in the product description.
+                    </p>
+                </div>
+
+                <div class="border-2 p-4 bg-gray-200">
+                    <p class="question text-xl font-medium"> How long does shipping take?</p>
+                    <p class="answer hidden">
+                        Orders are processed within 1-3 business days, and shipping typically takes 5-7 business 
+                        days depending on your location.
+                    </p>
+                </div>
+            </div>
+        </main>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <script src="script.js"></script>
+    </body>
+</html>

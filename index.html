@@ -6,24 +6,25 @@
         <title>CozySprout</title>
         <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display&family=Lora&display=swap" rel="stylesheet">
     </head>
     <body>
         <nav class="p-4 flex items-center justify-between px-10 fixed w-full z-50" style="background-color: #fff8b4;"> 
-            <h1 class="text-3xl font-bold"> Cozy<span class="text-green-700">Sprout</span> <i class="fas fa-leaf text-green-700"></i></h1>
-            
+            <h1 class="text-3xl font-normal" style="font-family: 'Pacifico', cursive;"> Cozy<span class="text-green-700">Sprout</span> <i class="fas fa-leaf text-green-700"></i></h1>
             <div class="flex gap-2 relative" style="width: 30%;">
-                <input type="text" placeholder="Start Looking for your plant" class="w-full py-1 px-3 rounded-lg" style="background-color: #fffde9; border: #cac59b solid 2px">
+                <input type="text" placeholder="Start Looking for your plant" class="w-full py-1 px-3 rounded-lg outline-none" style="background-color: #fffde9; border: #cac59b solid 2px">
                 <i class="fas fa-search absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
             </div>
-            <div class="flex gap-3">
-                <button class="font-bold"> CART</button>
-                <button class="font-bold"> ACCOUNT </button>
+            <div class="flex gap-3" style="font-family: 'Playfair Display', serif;">
+                <button class="font-bold hover:opacity-80"> CART</button>
+                <button class="font-bold hover:opacity-80s"> ACCOUNT </button>
             </div>
         </nav>
 
-        <main class="flex flex-col gap-20" style="background-color: #fffce0;"">
+        <main class="flex flex-col gap-20" style="background-color: #fffce0; font-family: 'Lora', serif;;">
             <div class="bg-cover bg-center text-white flex flex-col justify-center items-center gap-5" style="background-image: url('assets/greenLeaves.jpg'); height: 100vh;">
-                <p class="text-7xl font-bold"> Stay cozy with Greens </p>
+                <p class="text-7xl font-bold" style="font-family: 'Playfair Display', serif;"> Stay cozy with Greens </p>
                 <p class="text-xl font-medium"> Add a touch of greenery to make your space feel even more honey </p>
                 <div>
                     <button class="rounded-lg p-3 text-black font-bold mr-3 transform hover:scale-105 duration-300" style="background-color: #fff8b4;"> Browse Collection </button>
@@ -33,7 +34,7 @@
             </div>
             
             <div class="px-40">
-                <h2 class="text-4xl font-bold my-8"> Featured <span class="text-green-700">Products</span>  </h2>
+                <h2 class="text-4xl font-bold my-8" style="font-family: 'Playfair Display', serif;"> Featured <span class="text-green-700">Products</span>  </h2>
                 <div class="flex gap-5">
                     <div class="bg-gray-200 rounded-lg flex flex-col w-1/3 p-5 gap-5 justify-between shadow-2xl border-2 border-gray-300 transform hover:scale-105 duration-300 cursor-pointer">
                         <div class="flex flex-col gap-3">
@@ -84,12 +85,12 @@
             </div>
 
             <div class="px-40">
-                <h3 class="text-4xl font-bold my-8"> Your Guide to <span class="text-green-700">Thriving</span> Plants </h3>
+                <h3 class="text-4xl font-bold my-8" style="font-family: 'Playfair Display', serif;"> Your Guide to <span class="text-green-700">Thriving</span> Plants </h3>
 
                 <div class="flex flex-row gap-5">
-                    <div class="articleCard flex flex-col w-1/2 border-2 border-gray-300 rounded-lg">
-                        <img src="assets/article1.jpg" alt="plants in room">
-                        <div class="bg-gray-200 p-4 flex flex-col gap-2">
+                    <div class="articleCard flex flex-col w-1/2">
+                        <img src="assets/article1.jpg" alt="plants in room" class="rounded-t-lg">
+                        <div class="bg-gray-200 p-4 flex flex-col gap-2 border-b-2 border-l-2 border-r-2 border-gray-300 rounded-b-lg">
                             <div class="flex items-center justify-between">
                                 <div>
                                     <p class="text-xl font-bold"> Tips for Beginners </p>
@@ -104,9 +105,9 @@
                         </div>
                     </div>
 
-                    <div class="articleCard flex flex-col w-1/2 border-2 border-gray-300 rounded-lg">
-                        <img src="assets/article2.jpg" alt="plants">
-                        <div class="bg-gray-200 p-4 flex flex-col gap-2">
+                    <div class="articleCard flex flex-col w-1/2">
+                        <img src="assets/article2.jpg" alt="plants" class="rounded-t-lg">
+                        <div class="bg-gray-200 p-4 flex flex-col gap-2 border-b-2 border-l-2 border-r-2 border-gray-300 rounded-b-lg">
                             <div class="flex items-center justify-between">
                                 <div>
                                     <p class="text-xl font-bold"> Why you need Plants </p>
@@ -125,53 +126,110 @@
 
             <div class="bg-green-700 px-40 py-12 flex items-center justify-between">
                 <div>
-                    <p class="text-4xl font-bold my-8 text-white"> Subscribe to Save 30% off </p>
-                    <p class="text-lg text-gray-400"> *Only applies to certain products </p>
+                    <p class="text-4xl font-bold text-white"> Subscribe to Save 30% off </p>
+                    <p class="text-lg text-gray-300"> *Only applies to certain products* </p>
                 </div>
                 <div class="flex gap-3" style="width: 60%;">
-                    <input type="text" placeholder="Your Email" class="w-full py-1 px-3 rounded-lg" style="background-color: #fffde9; border: #cac59b solid 2px">
+                    <input type="text" placeholder="Your Email" class="w-full py-1 px-3 rounded-lg outline-none" style="background-color: #fffde9; border: #cac59b solid 2px">
                     <button class="rounded-lg p-3 text-black font-bold mr-3 transform hover:scale-105 duration-300" style="background-color: #fff8b4;"> Subscribe </button>
                 </div>
             </div>
             
             <div class="px-40 mb-20">
-                <h4 class="text-4xl font-bold my-5"> FAQ </h4>
-                <div class="border-2 p-4 bg-gray-200"> 
-                    <p class="question text-xl font-medium"> Where are your products sourced from?</p>
+                <h4 class="text-4xl font-bold my-5" style="font-family: 'Playfair Display', serif;"> FAQ </h4>
+                <div class="questionContainer p-4 border-2 border-gray-300 bg-gray-100 rounded-lg my-2 cursor-pointer hover:opacity-80"> 
+                    <div class="flex justify-between items-center">
+                        <p class="question text-xl font-medium"> Where are your products sourced from?</p>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </div>
+                    
                     <p class="answer" style="display: none;">
                         We source our plants from trusted growers who use sustainable and eco-friendly practices.
                     </p>
                 </div>
-                <div class="border-2 p-4 bg-gray-200">
-                    <p class="question text-xl font-medium"> Do you offer gift cards?</p>
-                    <p class="answer hidden">
+                <div class="questionContainer p-4 border-2 border-gray-300 bg-gray-100 rounded-lg my-2 cursor-pointer hover:opacity-80">
+                    <div class="flex justify-between items-center">
+                        <p class="question text-xl font-medium"> Do you offer gift cards?</p>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </div>
+                    <p class="answer" style="display: none;">
                         Yes! CozySprout gift cards are the perfect gift for plant lovers. You can purchase them 
                         directly on our website.
                     </p>
                 </div>
-                <div class="border-2 p-4 bg-gray-200">
-                    <p class="question text-xl font-medium"> How do I care for my new plant?</p>
-                    <p class="answer hidden"> 
+                <div class="questionContainer p-4 border-2 border-gray-300 bg-gray-100 rounded-lg my-2 cursor-pointer hover:opacity-80">
+                    <div class="flex justify-between items-center">
+                        <p class="question text-xl font-medium"> How do I care for my new plant?</p>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </div>
+                    <p class="answer" style="display: none;">
                         Each plant comes with a care guide tailored to its needs. General tips include providing the right amount of sunlight, 
                         watering when the soil feels dry, and ensuring good drainage.
                     </p>
                 </div>
-                <div class="border-2 p-4 bg-gray-200">
-                    <p class="question text-xl font-medium"> Are your plants pet-friendly?</p>
-                    <p class="answer hidden">
+                <div class="questionContainer p-4 border-2 border-gray-300 bg-gray-100 rounded-lg my-2 cursor-pointer hover:opacity-80">
+                    <div class="flex justify-between items-center">
+                        <p class="question text-xl font-medium"> Are your plants pet-friendly?</p>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </div>
+                    <p class="answer" style="display: none;">
                         We offer a selection of pet-friendly plants. Look for the "pet-safe" label in the product description.
                     </p>
                 </div>
-
-                <div class="border-2 p-4 bg-gray-200">
-                    <p class="question text-xl font-medium"> How long does shipping take?</p>
-                    <p class="answer hidden">
+                <div class="questionContainer p-4 border-2 border-gray-300 bg-gray-100 rounded-lg my-2 cursor-pointer hover:opacity-80">
+                    <div class="flex justify-between items-center">
+                        <p class="question text-xl font-medium"> How long does shipping take?</p>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </div>
+                    <p class="answer" style="display: none;">
                         Orders are processed within 1-3 business days, and shipping typically takes 5-7 business 
                         days depending on your location.
                     </p>
                 </div>
             </div>
         </main>
+
+        <footer class="px-40 bg-green-700 py-20 flex flex-col gap-28 text-white">
+            <div class="flex flex-row justify-between">
+                <div class="flex gap-32">
+                    <div>
+                        <h5 class="font-bold text-xl pb-1"> Company </h5>
+                        <p> About Us </p>
+                        <p> Sustainability </p>
+                        <p> Discover Greens </p>
+                        <p> Careers </p>
+                        <p> Privacy Policy </p>
+                        <p> Terms </p>
+                    </div>
+                    <div>
+                        <h6 class="font-bold text-xl pb-1"> Customers </h6>
+                        <p> Return Policy </p>
+                        <p> Shipping </p>
+                        <p> FAQ </p>
+                        <p> Support </p>
+                    </div>
+                    <div>
+                        <h7 class="font-bold text-xl pb-1"> Contact Us </h7>
+                        <p> +1 (800) 900 - 399 </p>
+                        <p> cozysprouts@sprout.com </p>
+                        <p> Mon-Fri 9am-5pm PT </p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2 text-xl">
+                    <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com" target="_blank"><i class="fa-brands fa-x"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="flex justify-between border-t-2 border-white pt-5">
+                <p> 2025 Copyright @ Pauleena Phan </p>
+                <p> Hosted by Github Pages </p>
+            </div>
+            
+        </footer>
         
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>

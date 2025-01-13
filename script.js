@@ -18,12 +18,26 @@ $(".questionContainer").on("click", function () {
     if (answer.css("display") === "none") {
         answer.css("display", "block");
         // when removing a class only use the name
-        console.log("we will be removing carrot")
-        // if you were to have multiple classes removeClass("remove this single class name")
+        // if you were to remove a specific class removeClass("remove this single class name")
         // To remove the whole thing you use removeClass()
         $(this).find(".fa-caret-right").removeClass("fa-caret-right").addClass("fa-caret-down");
     } else {
         answer.css("display", "none");
-        $(this).find(".fa-caret-down").removeClass("fa-caret-down").addClass("fa-caret-right")
+        $(this).find(".fa-caret-down").removeClass("fa-caret-down").addClass("fa-caret-right");
+    }
+});
+
+$(window).on('scroll', function () {
+    // Get the .slide-in element
+    const $slideInElement = $('.featuredProduct');
+    
+    // offset top will get the distance between the top edge of the element
+    // and the top edge of the entire document 
+    const elementTop = $slideInElement.offset().top;
+    const windowBottom = $(window).scrollTop() + $(window).height();
+
+    // If the element is visible in the viewport, add the 'visible' class
+    if(elementTop < windowBottom - 50) { // Adjust offset for better trigger
+        $slideInElement.addClass('visible');
     }
 });

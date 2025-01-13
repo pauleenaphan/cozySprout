@@ -9,8 +9,10 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display&family=Lora&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+
     </head>
-    <body>
+    <body class="overflow-x-hidden">
         <nav class="p-4 flex items-center justify-between px-10 fixed w-full z-50" style="background-color: #fff8b4;"> 
             <h1 class="text-3xl font-normal" style="font-family: 'Pacifico', cursive;"> Cozy<span class="text-green-700">Sprout</span> <i class="fas fa-leaf text-green-700"></i></h1>
             <div class="flex gap-2 relative" style="width: 30%;">
@@ -23,7 +25,7 @@
             </div>
         </nav>
 
-        <main class="flex flex-col gap-20" style="background-color: #fffce0; font-family: 'Lora', serif;;">
+        <main class="flex flex-col gap-20" style="background-color: #fffce0; font-family: 'Lora', serif;">
             <div class="bg-cover bg-center text-white flex flex-col justify-center items-center gap-5" style="background-image: url('assets/greenLeaves.jpg'); height: 100vh;">
                 <p class="text-7xl font-bold" style="font-family: 'Playfair Display', serif;"> Stay cozy with Greens </p>
                 <p class="text-xl font-medium"> Add a touch of greenery to make your space feel even more honey </p>
@@ -37,7 +39,7 @@
             <div class="px-40">
                 <h2 class="text-4xl font-bold my-8" style="font-family: 'Playfair Display', serif;"> Featured <span class="text-green-700">Products</span>  </h2>
                 <div class="flex gap-5">
-                    <div class="bg-gray-200 rounded-lg flex flex-col w-1/3 p-5 gap-5 justify-between shadow-2xl border-2 border-gray-300 transform hover:scale-105 duration-300 cursor-pointer">
+                    <div class="featuredProduct bg-gray-200 rounded-lg flex flex-col w-1/3 p-5 gap-5 justify-between shadow-2xl border-2 border-gray-300 transform hover:scale-105 duration-300 cursor-pointer">
                         <div class="flex flex-col gap-3">
                             <p class="text-xl font-medium"> Floral Leaves </p>
                             <img src="assets/product1.jpg" alt="floral leaves" class="rounded-lg w-full"> 
@@ -52,7 +54,7 @@
                             <p> 4 Stars </p>
                         </div>
                     </div>
-                    <div class="bg-gray-200 rounded-lg flex flex-col w-1/3 p-5 gap-3 justify-between shadow-2xl border-2 border-gray-300 transform hover:scale-105 duration-300 cursor-pointer">
+                    <div class="featuredProduct bg-gray-200 rounded-lg flex flex-col w-1/3 p-5 gap-3 justify-between shadow-2xl border-2 border-gray-300 transform hover:scale-105 duration-300 cursor-pointer">
                         <div class="flex flex-col gap-3">
                             <p class="text-xl font-medium"> Succulent Buzz </p>
                             <img src="assets/product2.jpg" alt="succulent buzz" class="rounded-lg w-full"> 
@@ -67,7 +69,7 @@
                         </div>
                         
                     </div>
-                    <div class="bg-gray-200 rounded-lg flex flex-col w-1/3 p-5 gap-3 justify-between shadow-2xl border-2 border-gray-300 transform hover:scale-105 duration-300 cursor-pointer">
+                    <div class="featuredProduct bg-gray-200 rounded-lg flex flex-col w-1/3 p-5 gap-3 justify-between shadow-2xl border-2 border-gray-300 transform hover:scale-105 duration-300 cursor-pointer">
                         <div class="flex flex-col gap-3">
                             <p class="text-xl font-medium"> Leaf & Vine </p>
                             <img src="assets/product3.jpg" alt="lead and vine" class="rounded-lg w-full"> 

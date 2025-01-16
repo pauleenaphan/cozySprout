@@ -16,16 +16,13 @@ $(".questionContainer").on("click", function () {
     // it is a child if it is in any descendant level
     const answer = $(this).find(".answer"); 
     if (answer.css("display") === "none") {
-        answer.css("display", "block");
-        // when removing a class only use the name
-        // if you were to remove a specific class removeClass("remove this single class name")
-        // To remove the whole thing you use removeClass()
         $(this).find(".fa-caret-right").removeClass("fa-caret-right").addClass("fa-caret-down");
     } else {
-        answer.css("display", "none");
         $(this).find(".fa-caret-down").removeClass("fa-caret-down").addClass("fa-caret-right");
     }
+    $(this).find(".answer").slideToggle("fast");
 });
+
 
 $(window).on('scroll', function () {
     // Get the .slide-in element
